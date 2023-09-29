@@ -12,10 +12,14 @@
       <div id="iframe"></div>
       
       <script>
+        var dont = false
+
         function submit() {
 
-          passwd = document.getElementById("passwd").value;
+          var passwd = document.getElementById("passwd").value;
           document.getElementById("passwd").value = "";
+
+          if (dont === true) {return}
 
           if (passwd === "DonaldTrump") {
 
@@ -23,6 +27,7 @@
             document.getElementById("iframe").innerHTML = document.getElementById("iframe").innerHTML + "<iframe src='https://chettt.onrender.com' width='50vw' height='100vh' scrolling='auto' allow='microphone; camera'></iframe><iframe src='https://tokbox.com/embed/embed/ot-embed.js?embedId=fdc54530-9ddf-427e-9c42-9e662d941288&room=DEFAULT_ROOM&iframe=true' width='100vh' height='100vh' scrolling='auto' allow='microphone; camera'></iframe>"
 
           }
+          dont = true
 
         }
       </script>
