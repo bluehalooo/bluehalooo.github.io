@@ -1,7 +1,7 @@
 <html>
   <head><title>Video Chat</title></head> <body>
 
-      <input type="text" id="passwd">
+      <input type="password" id="passwd">
       <button onclick="submit()">Submit</button>
 
       <div id="iframe"></div>
@@ -10,6 +10,7 @@
         function submit() {
 
           passwd = document.getElementById("passwd").value;
+          document.getElementById("passwd").value = "";
 
           if (passwd === "joinme") {
 
