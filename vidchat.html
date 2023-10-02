@@ -12,14 +12,14 @@
       <div id="iframe"></div>
       
       <script>
-        var dont = false
+        var AIDS = false
 
         function submit() {
 
           var passwd = document.getElementById("passwd").value;
           document.getElementById("passwd").value = "";
 
-          if (dont === true) {return}
+          if (AIDS === true) {return}
 
           if (passwd.toLowerCase() === "donaldtrump" || passwd.toLowerCase() === "fuck") {
 
@@ -28,7 +28,7 @@
             document.getElementById("deletenow").innerHTML = ""
 
           }
-          dont = true
+          AIDS = true
 
         }
       </script>
